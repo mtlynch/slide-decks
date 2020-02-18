@@ -1,0 +1,58 @@
+version: 2.1
+jobs:
+  check-whitespace:
+    docker:
+      - image: debian:jessie-20190228-slim
+    steps:
+      - checkout
+      - run:
+          name: Check for trailing whitespace
+          command: tests/check-trailing-whitespace
+  build:
+    docker:
+      - image: peaceiris/hugo:v0.62.1
+    steps:
+      - checkout
+      - run:
+          name: Get submodules
+          command: |
+            git submodule init
+            git submodule update --remote
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Build prod site
+          command: hugo version && hugo
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - public
+            - tests
+            - firebase.json
+            - .firebaserc
+  deploy:
+    docker:
+      - image: circleci/node:13.1.0-stretch
+    steps:
+      - attach_workspace:
+          at: ./
+      - run:
+          name: Install firebase-tools
+          command: npm install firebase-tools
+      - run:
+          name: Deploy to firebase
+          command: |
+            ./node_modules/.bin/firebase deploy --token="$FIREBASE_DEPLOY_TOKEN"
+workflows:
+  version: 2
+  test-deploy:
+    jobs:
+      - check-whitespace
+      - build
+      - deploy:
+          requires:
+            - check-whitespace
+            - build
+          filters:
+            branches:
+              only: master

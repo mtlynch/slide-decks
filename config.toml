@@ -1,4 +1,5 @@
 theme = "reveal-hugo"
+buildFuture = true
 
 [outputFormats.Reveal]
 baseName = "index"

@@ -5,7 +5,7 @@
       {{ .Content }}
         <ul>
         {{ range sort .Sections}}
-          <li>{{ .Date.Format "January 2, 2006" }}: <a class="" href="{{ .Permalink }}">{{ .Title }}</a></li>
+          <li>{{ .Date.Format "January 2, 2006" }}: <a href="{{ .Permalink }}">"{{ .Title }}"</a> &dash; {{ .Params.conference }} {{ .Date.Format "2006" }}</li>
         {{ end }}
         </ul>
     </div>

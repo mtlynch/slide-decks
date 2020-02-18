@@ -4,3 +4,9 @@ theme = "reveal-hugo"
 baseName = "index"
 mediaType = "text/html"
 isHTML = true
+
+[params.reveal_hugo]
+custom_theme = "reveal-hugo/themes/robot-lung.css"
+
+[markup.goldmark.renderer]
+unsafe = true

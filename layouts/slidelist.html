@@ -1,0 +1,13 @@
+<section class="section">
+  <div class="container">
+    <h1 class="title">{{ .Title }}</h1>
+    <div class="content">
+      {{ .Content }}
+        <ul>
+        {{ range sort .Sections}}
+          <li>{{ .Date.Format "January 2, 2006" }}: <a class="" href="{{ .Permalink }}">{{ .Title }}</a></li>
+        {{ end }}
+        </ul>
+    </div>
+  </div>
+</section>

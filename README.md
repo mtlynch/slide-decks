@@ -1,5 +1,7 @@
 # Conference Presentations
 
+[![CircleCI](https://circleci.com/gh/mtlynch/slide-decks.svg?style=svg)](https://circleci.com/gh/mtlynch/slide-decks)
+
 ## Overview
 
 This repo contains slide decks for Michael Lynch's public presentations.

@@ -15,7 +15,72 @@ https://decks.mtlynch.io/nerds-2020/
 
 # You're all sworn to secrecy
 
-* TODO
+* This is a true story\*
+* I really did steal money
+* But it was the right thing to do
+
+\* Variable names have been changed to protect the innocent.
+
+---
+
+# A brief crash course in cryptocurrency
+
+* For people who don't care about cryptocurrency
+
+---
+
+# How do you manage financial accounts without a bank?
+
+* Traditional payment processors rely on banks to verify your identity.
+
+---
+
+# Public/private keys - the heart of cryptocurrency
+
+* Private key
+  * Only you know it.
+  * Proves that you're you.
+* Public key
+  * The world knows it.
+  * Confirms that messages using your private key are correct.
+
+---
+
+# A simple public/private key example
+
+* TODO: Example
+
+---
+
+# Private keys have to be strong
+
+* Brute force can crack most bank passwords.
+  * Banks are responsible for stopping this.
+* Nobody can prevent attackers from brute forcing cryptocurrency private keys.
+
+---
+
+# Private key strength
+
+| Cryptocurrency | Key size | Time to brute force |
+|----------------|----------|---------------------|
+| Bitcoin        | XX-bit   | XX GPU hours        |
+| Ethereum       | XX-bit   | XX GPU hours        |
+| Sia            | XX-bit   | XX GPU hours        |
+
+---
+
+# Sia: a cryptocurrency for sharing storage
+
+* Like Airbnb, but for disk space
+* TODO: Sia screenshot
+
+---
+
+# Private keys on Sia
+
+* TODO: Screenshot of how Sia shows passphrases
+* TODO: Verify how public keys are distributed
 
 ---
 
@@ -31,9 +96,238 @@ https://decks.mtlynch.io/nerds-2020/
 
 ---
 
+# To the dictionary!
+
+* Sia uses a library called [entropy-mnemonics](https://github.com/NebulousLabs/entropy-mnemonics)
+* Its dictionary contains 1,626 words
+
+```golang
+  englishDictionary = Dictionary{
+    "abbey",
+    "abducts",
+    "ability",
+    "ablaze",
+    "abnormal",
+    "abort",
+    "abrasive",
+    "absorb",
+    "abyss",
+    "academy",
+    "aces",
+    "aching",
+    "acidic",
+    "acoustic",
+    "acquire",
+    "across",
+    "actress",
+    ...
+```
+---
+
+# Ctrl+F my way to riches
+
+* Which word is not in the dictionary?
+* TODO: Screenshot of me searching each word in the browser
+
+---
+
+# Finding similar words
+
+* How do we find words that are one copying error away from one another?
+
+---
+
+# Levenshtein distance
+
+* Measures "edit distance" between two words
+
+| Word A  | Word B  | Distance  |
+|---------|---------|-----------|
+| ca**t** | ca**r** | 1         |
+| ca**t** | **s**ca**r** | 2    |
+
+---
+
+# A quick 'n dirty Levenshtein search
+
+```python
+import Levenshtein
+
+seed = raw_input('enter your wallet seed: ')
+
+for seed_word in seed.split():
+  for dict_word in open('dictionary.txt'):
+    dict_word = dict_word.strip()
+    distance = Levenshtein.distance(seed_word, dict_word)
+    if distance != 1:
+      continue
+    print '"%s" -> "%s"\n%s\n' % (seed_word, dict_word,
+                                  seed.replace(seed_word, dict_word))
+```
+
+---
+
+# Running the search
+
+```text
+$ python recover.py
+enter your wallet seed: eluded logic wise ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public tonic vulture shrugged otter adapt
+
+"wise" -> "wife"
+eluded logic wife ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public tonic vulture shrugged otter adapt
+
+"tagged" -> "jagged"
+eluded logic wise ascend jagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public tonic vulture shrugged otter adapt
+
+"tagged" -> "nagged"
+eluded logic wise ascend nagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public tonic vulture shrugged otter adapt
+
+"aptitude" -> "altitude"
+eluded logic wise ascend tagged acoustic situated stylishly younger altitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public tonic vulture shrugged otter adapt
+
+"push" -> "lush"
+eluded logic wise ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar lush because brunt viking gone august public tonic vulture shrugged otter adapt
+
+"brunt" -> "grunt"
+eluded logic wise ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because grunt viking gone august public tonic vulture shrugged otter adapt
+
+"tonic" -> "ionic"
+eluded logic wise ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public ionic vulture shrugged otter adapt
+
+"tonic" -> "sonic"
+eluded logic wise ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public sonic vulture shrugged otter adapt
+
+"tonic" -> "topic"
+eluded logic wise ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public topic vulture shrugged otter adapt
+
+"tonic" -> "toxic"
+eluded logic wise ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public toxic vulture shrugged otter adapt
+
+"adapt" -> "adept"
+eluded logic wise ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public tonic vulture shrugged otter adept
+
+"adapt" -> "adopt"
+eluded logic wise ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public tonic vulture shrugged otter adopt
+```
+
+---
+
+# Checking seed candidates
+
+"wise" -> "wife"
+
+```text
+$ siac wallet init-seed
+Seed: eluded logic wife ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public tonic vulture shrugged otter adapt
+
+Could not initialize wallet from seed: error when calling /wallet/init/seed: seed failed
+checksum verification
+```
+
+---
+
+# Checking seed candidates
+
+"tonic" -> "ionic"
+
+```text
+$ siac wallet init-seed
+Seed: eluded logic wise ascend tagged acoustic situated stylishly younger aptitude inroads avidly hefty also godfather unrest avatar push because brunt viking gone august public ionic vulture shrugged otter adapt
+
+Wallet initialized and encrypted with seed.
+```
+
+---
+
+# Checking the loot
+
+```text
+$ siac wallet
+Wallet status:
+Encrypted, Unlocked
+Confirmed Balance:   594.8 SC
+```
+
+---
+
+# I thought you said €2,000...
+
+* 594.8 SC ~= €10
+* Where'd the rest of the money go?
+
+---
+
+# Yoinks
+
+* TODO: Screenshot of SiaStats move to my wallet
+
+---
+
+# About that €2,000...
+
+```bash
+$ siac wallet transactions
+[height]          [transaction id]    [net siacoins]   [net siafunds]
+  108589   427b72c98e8ea64fba2...         594.83 SC             0 SF
+  109002   2304da26d61bd2cb7fc...        -594.55 SC             0 SF
+```
+
+---
+
+# Maybe the money was in limbo
+
+* TODO: Screenshot of exchange problems post
+
+---
+
+# How do you steal money when it's not there yet?
+
+* Naive approach: Infinitely set the transfer
+  * But what if I incorrectly guess the amount?
+* I'm playing *The Price is Right*.
+
+---
+
+# Draining little by little
+
+```
+for /l %%x in (1, 0, 100) do (
+   siac wallet send siacoins 2000SC fff0228f02a01cf8e037047a5ea0db5a88d614913af5f21de209ebf2e58431c68cfc9c27d0e4
+)
+```
+
+---
+
+# Informing the victim
+
+* What I could buy with the money
+
+---
+
+# Mystery solved
+
+* TODO: Response from victim
+
+<img src="owner-response.png">
+
+---
+
+# Did I commit a crime?
+
+* TODO: Screenshot of HN accusing me of crime.
+* TODO: Go over CFAA to say why it's not.
+
+---
+
 # Lessons learned
 
 * TODO
+
+---
+
+# WanderJest
+
+* TODO: WanderJest screenshot
 
 ---
 

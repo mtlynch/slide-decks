@@ -9,17 +9,19 @@ outputs = ["Reveal"]
 
 {{< param conference >}} - March 20, 2020
 
+Michael Lynch ([@deliberatecoder](https://twitter.com/deliberatecoder))
+
 https://decks.mtlynch.io/nerds-2020/
 
 ---
 
 # You're all sworn to secrecy
 
-* This is a true story\*
+* This is a true story<sup>\*</sup>
 * I really did steal money
 * But it was the right thing to do
 
-\* Variable names have been changed to protect the innocent.
+<sup>\*</sup>Variable names have been changed to protect the innocent.
 
 ---
 
@@ -52,11 +54,17 @@ https://decks.mtlynch.io/nerds-2020/
 
 ---
 
-# Private keys have to be strong
+# Brute forcing bank logins
 
 * Brute force can crack most bank passwords.
   * Banks are responsible for stopping this.
+
+---
+
+# Preventing brute force for cryptocurrency
+
 * Nobody can prevent attackers from brute forcing cryptocurrency private keys.
+* Private keys must be strong
 
 ---
 
@@ -131,6 +139,12 @@ https://decks.mtlynch.io/nerds-2020/
 
 ---
 
+# No dice
+
+* Every word is in dictionary
+
+---
+
 # Finding similar words
 
 * How do we find words that are one copying error away from one another?
@@ -145,6 +159,51 @@ https://decks.mtlynch.io/nerds-2020/
 |---------|---------|-----------|
 | ca**t** | ca**r** | 1         |
 | ca**t** | **s**ca**r** | 2    |
+
+---
+
+# Framing the problem
+
+```text
+eluded logic wise ascend tagged acoustic situated stylishly younger aptitude inroads
+avidly hefty also godfather unrest avatar push because brunt viking gone august public
+tonic vulture shrugged otter adapt
+```
+
+---
+
+# Finding alternate candidates
+
+Checking the word `wise`
+
+| Dictionary word | Levenshtein distance |
+|-----------------|----------------------|
+| `abbey`         | 4                    |
+| `abducts`       | 7                    |
+| `ability`       | 6                    |
+| ...             | ...                  |
+| <span style="background: hotpink">`wife`</span>          | <span style="background: hotpink">1</span>                    |
+| `wildly`        | 4                    |
+
+---
+
+# Finding alternate candidates
+
+| Position | Word     | Alternate Candidates |
+|----------|----------|----------------------|
+| 1        | `eluded` |                      |
+| 2        | `logic`  |                      |
+| 3        | `wise`   | `wife`               |
+| 4        | `ascend` |                      |
+| 5        | `tagged` | `jagged`, `nagged`   |
+| ...      | ...      | ...                  |
+
+---
+
+# Finding a Levenshtein implementation
+
+* TODO: Screenshot of PyPI package
+* TODO: Console output of pip installing
 
 ---
 
@@ -298,17 +357,35 @@ for /l %%x in (1, 0, 100) do (
 
 ---
 
-# Informing the victim
+# Informing the owner
 
 * What I could buy with the money
 
 ---
 
+# Doing the right thing
+
+<img src="inform-owner.png">
+
+---
+
+# And then...
+
+Nothing
+
+TODO: Show screenshot of deleted post
+
+---
+
 # Mystery solved
 
-* TODO: Response from victim
-
 <img src="owner-response.png">
+
+---
+
+# Why can't you guess every possible passphrase?
+
+* TODO: Screenshot of people suggesting guessing every passphrase
 
 ---
 
@@ -321,7 +398,11 @@ for /l %%x in (1, 0, 100) do (
 
 # Lessons learned
 
-* TODO
+* Cryptographic keys are fragile.
+  * Information you reveal weakens them more than you might expect.
+* Avoid human copying for precious data.
+* Keep track of where you announce major financial losses.
+* I love clean code, but quick 'n dirty works when there's a time crunch.
 
 ---
 

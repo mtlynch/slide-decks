@@ -464,7 +464,7 @@ TODO: Show screenshot of deleted post
 
 # Thanks!
 
-* Full blog post is at https://mtlynch.io/stole-siacoins/
+* Full blog post is at https://mtlynch.io/stole-siacoin/
   * Or Google "stole siacoin"
 * Twitter: [@deliberatecoder](https://twitter.com/deliberatecoder)
 * Email: michael@mtlynch.io

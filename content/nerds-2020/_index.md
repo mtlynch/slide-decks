@@ -31,6 +31,21 @@ https://decks.mtlynch.io/nerds-2020/
 
 ---
 
+# What do banks do?
+
+1. Confirm your identity
+1. Manage transfers to/from your account
+
+---
+
+# Brute forcing bank logins
+
+* Brute force can crack most bank passwords.
+  * Banks are responsible for stopping this.
+* TODO: Screenshot of failed auth
+
+---
+
 # How do you manage financial accounts without a bank?
 
 * Traditional payment processors rely on banks to verify your identity.
@@ -48,16 +63,45 @@ https://decks.mtlynch.io/nerds-2020/
 
 ---
 
-# A simple public/private key example
+# Public/private key encryption is one way
 
-* TODO: Example
+```bash
+> encrypt("Hello, world!", private_key)
+QWxvaGEsIG11bmRvIQ==
+```
+
+```bash
+> decrypt("QWxvaGEsIG11bmRvIQ==", public_key)
+Hello, world!
+```
 
 ---
 
-# Brute forcing bank logins
+# Public/private key encryption is one way
 
-* Brute force can crack most bank passwords.
-  * Banks are responsible for stopping this.
+TODO: Flow chart
+
+```bash
+> decrypt("QWxvaGEsIG11bmRvIQ==", private_key)
+Huh? Do you understand how public/private key encryption works?
+```
+
+---
+
+# Transfering cryptocurrency with public/private keys
+
+
+```python
+> encrypt("I hereby give $5 to Kelly Albrecht", private_key)
+WW8gZG95ICQ1IGEgS2VsbHkgQWxicmVjaHQ=
+```
+
+```python
+> decrypt("WW8gZG95ICQ1IGEgS2VsbHkgQWxicmVjaHQ=", public_key)
+I hereby give $5 to Kelly Albrecht
+```
+
+* In short: private keys are like passwords that the world can verify.
 
 ---
 
@@ -70,25 +114,24 @@ https://decks.mtlynch.io/nerds-2020/
 
 # Private key strength
 
-| Cryptocurrency | Key size | Time to brute force |
-|----------------|----------|---------------------|
-| Bitcoin        | XX-bit   | XX GPU hours        |
-| Ethereum       | XX-bit   | XX GPU hours        |
-| Sia            | XX-bit   | XX GPU hours        |
+* 256-bit random value
+  * 2<sup>256</sup> possible keys
+  * 1.1x10<sup>77</sup> possible keys
+
+* TODO: Atoms in the universe
 
 ---
 
 # Sia: a cryptocurrency for sharing storage
 
 * Like Airbnb, but for disk space
-* TODO: Sia screenshot
+<img src="sia-homepage.jpg">
 
 ---
 
 # Private keys on Sia
 
 * TODO: Screenshot of how Sia shows passphrases
-* TODO: Verify how public keys are distributed
 
 ---
 
@@ -101,6 +144,12 @@ https://decks.mtlynch.io/nerds-2020/
 # A seedy reddit post
 
 <img src="sia-reddit-2.png">
+
+---
+
+# I'm *pretty sure* I didn't make a mistake
+
+TODO: Highlight "pretty sure"
 
 ---
 
@@ -135,7 +184,8 @@ https://decks.mtlynch.io/nerds-2020/
 # Ctrl+F my way to riches
 
 * Which word is not in the dictionary?
-* TODO: Screenshot of me searching each word in the browser
+
+<img src="ctrl-f-search.png">
 
 ---
 

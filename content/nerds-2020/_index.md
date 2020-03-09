@@ -153,6 +153,21 @@ TODO: Highlight "pretty sure"
 
 ---
 
+# Finding the mistake
+
+* Transposed letters?
+* Added or subtracted letters?
+* Incorrect letter?
+* Testing passwords is slow
+
+---
+
+# Where did those words come from
+
+* How did Sia generate the passphrase?
+
+---
+
 # To the dictionary!
 
 * Sia uses a library called [entropy-mnemonics](https://github.com/NebulousLabs/entropy-mnemonics)

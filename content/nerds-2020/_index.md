@@ -42,17 +42,20 @@ https://decks.mtlynch.io/nerds-2020/
 
 * Brute force can crack most bank passwords.
   * Banks are responsible for stopping this.
-* TODO: Screenshot of failed auth
+
+<img src="chase-bad-login.png">
 
 ---
 
-# How do you manage financial accounts without a bank?
+### How do you manage financial accounts without a bank?
 
 * Traditional payment processors rely on banks to verify your identity.
 
 ---
 
-# Public/private keys - the heart of cryptocurrency
+# Public/private keys
+
+### The heart of cryptocurrency
 
 * Private key
   * Only you know it.
@@ -63,7 +66,7 @@ https://decks.mtlynch.io/nerds-2020/
 
 ---
 
-# Public/private key encryption is one way
+### Public/private key encryption is one way
 
 ```bash
 > encrypt("Hello, world!", private_key)
@@ -77,7 +80,7 @@ Hello, world!
 
 ---
 
-# Public/private key encryption is one way
+### Public/private key encryption is one way
 
 TODO: Flow chart
 
@@ -88,7 +91,7 @@ Huh? Do you understand how public/private key encryption works?
 
 ---
 
-# Transfering cryptocurrency with public/private keys
+### Transfering cryptocurrency with public/private keys
 
 
 ```python
@@ -105,7 +108,7 @@ I hereby give $5 to Kelly Albrecht
 
 ---
 
-# Preventing brute force for cryptocurrency
+### Preventing brute force for cryptocurrency
 
 * Nobody can prevent attackers from brute forcing cryptocurrency private keys.
 * Private keys must be strong
@@ -116,13 +119,14 @@ I hereby give $5 to Kelly Albrecht
 
 * 256-bit random value
   * 2<sup>256</sup> possible keys
-  * 1.1x10<sup>77</sup> possible keys
-
-* TODO: Atoms in the universe
+  * 10<sup>77</sup> possible keys
+* Atoms in the universe: 10<sup>82</sup>
 
 ---
 
-# Sia: a cryptocurrency for sharing storage
+# Sia
+
+### A cryptocurrency for sharing storage
 
 * Like Airbnb, but for disk space
 <img src="sia-homepage.jpg">
@@ -131,7 +135,7 @@ I hereby give $5 to Kelly Albrecht
 
 # Private keys on Sia
 
-* TODO: Screenshot of how Sia shows passphrases
+<img src="sia-ui-passphrase.png">
 
 ---
 
@@ -141,15 +145,33 @@ I hereby give $5 to Kelly Albrecht
 
 ---
 
-# A seedy reddit post
+## I spent €2,000 on this Sia thing...
+
+<img src="sia-reddit-1a.png">
+
+---
+
+## Literally 500 tries
+
+<img src="sia-reddit-1b.png">
+
+---
+
+### Would publishing my password help?
 
 <img src="sia-reddit-2.png">
 
 ---
 
+# A seedy reddit post
+
+<img src="sia-reddit-3.png">
+
+---
+
 # I'm *pretty sure* I didn't make a mistake
 
-TODO: Highlight "pretty sure"
+<img src="sia-reddit-mistake.png">
 
 ---
 
@@ -158,7 +180,8 @@ TODO: Highlight "pretty sure"
 * Transposed letters?
 * Added or subtracted letters?
 * Incorrect letter?
-* Testing passwords is slow
+
+* TODO: Give examples
 
 ---
 
@@ -225,6 +248,8 @@ TODO: Highlight "pretty sure"
 | ca**t** | ca**r** | 1         |
 | ca**t** | **s**ca**r** | 2    |
 
+TODO: One more example
+
 ---
 
 # Framing the problem
@@ -269,6 +294,12 @@ Checking the word `wise`
 
 * TODO: Screenshot of PyPI package
 * TODO: Console output of pip installing
+
+---
+
+# Using Levenshtein library
+
+* TODO: Example API usage
 
 ---
 
@@ -428,6 +459,12 @@ for /l %%x in (1, 0, 100) do (
 
 ---
 
+# I know you said €2,000, but...
+
+* I'm not pocketing your money.
+
+---
+
 # Doing the right thing
 
 <img src="inform-owner.png">
@@ -454,9 +491,21 @@ TODO: Show screenshot of deleted post
 
 ---
 
+# Why can't you guess every possible passphrase?
+
+* 29<sup>1,626</sup> ~= 10<sup>2,377</sup> possible passphrases
+* Brute forcing every possible private key: 10<sup>77</sup>
+
+---
+
 # Did I commit a crime?
 
-* TODO: Screenshot of HN accusing me of crime.
+<img src="hn-critic.png">
+
+---
+
+# Did I commit a crime?
+
 * TODO: Go over CFAA to say why it's not.
 
 ---

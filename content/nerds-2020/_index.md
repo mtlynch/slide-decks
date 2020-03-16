@@ -17,11 +17,13 @@ https://decks.mtlynch.io/nerds-2020/
 
 # You're all sworn to secrecy
 
-* This is a true story<sup>\*</sup>
-* I really did steal money
-* But it was the right thing to do
+<ul>
+{{% fragment index="0" %}}<li>This is a true story<sup>*</sup></li>{{% /fragment %}}
+{{% fragment index="1" %}}<li>I really did steal money</li>{{% /fragment %}}
+{{% fragment index="2" %}}<li>But it was the right thing to do</li>{{% /fragment %}}
+</ul>
 
-<sup>\*</sup>Variable names have been changed to protect the innocent.
+{{% fragment index="0" %}}<p><sup>*</sup>Variable names have been changed to protect the innocent.</p>{{% /fragment %}}
 
 ---
 
@@ -95,13 +97,13 @@ Huh? Do you understand how public/private key encryption works?
 
 
 ```python
-> encrypt("I hereby give $5 to Kelly Albrecht", private_key)
+> encrypt("I hereby give $5 to Rick Hood", private_key)
 WW8gZG95ICQ1IGEgS2VsbHkgQWxicmVjaHQ=
 ```
 
 ```python
 > decrypt("WW8gZG95ICQ1IGEgS2VsbHkgQWxicmVjaHQ=", public_key)
-I hereby give $5 to Kelly Albrecht
+I hereby give $5 to Rick Hood
 ```
 
 * In short: private keys are like passwords that the world can verify.
@@ -110,16 +112,18 @@ I hereby give $5 to Kelly Albrecht
 
 ### Preventing brute force for cryptocurrency
 
-* Nobody can prevent attackers from brute forcing cryptocurrency private keys.
-* Private keys must be strong
+* Banks rate limit attempts to guess every password
+  * You can't prevent people from guessing every private key.
+  * Private keys must be strong
 
 ---
 
 # Private key strength
 
-* 256-bit random value
+* 256-bit random value (almost every cryptocurrency)
   * 2<sup>256</sup> possible keys
   * 10<sup>77</sup> possible keys
+* Atoms on Earth: 10<sup>50</sup>
 * Atoms in the universe: 10<sup>82</sup>
 
 ---
@@ -129,7 +133,8 @@ I hereby give $5 to Kelly Albrecht
 ### A cryptocurrency for sharing storage
 
 * Like Airbnb, but for disk space
-<img src="sia-homepage.jpg">
+
+<img src="sia-homepage.jpg" style="max-width: 50%">
 
 ---
 
@@ -178,10 +183,11 @@ I hereby give $5 to Kelly Albrecht
 # Finding the mistake
 
 * Transposed letters?
+  * `meat` -> `meta`
 * Added or subtracted letters?
+  * `heart` -> `heat`
 * Incorrect letter?
-
-* TODO: Give examples
+  * `tagged` -> `tugged`
 
 ---
 
@@ -247,8 +253,7 @@ I hereby give $5 to Kelly Albrecht
 |---------|---------|-----------|
 | ca**t** | ca**r** | 1         |
 | ca**t** | **s**ca**r** | 2    |
-
-TODO: One more example
+| ba**k**er   | b**re**a**d** | 4 |
 
 ---
 
@@ -457,6 +462,8 @@ for /l %%x in (1, 0, 100) do (
 
 * What I could buy with the money
 
+TODO: Rolexes, yachts
+
 ---
 
 # I know you said €2,000, but...
@@ -474,8 +481,6 @@ for /l %%x in (1, 0, 100) do (
 # And then...
 
 Nothing
-
-TODO: Show screenshot of deleted post
 
 ---
 

@@ -35,8 +35,11 @@ https://decks.mtlynch.io/nerds-2020/
 
 # What do banks do?
 
-1. Confirm your identity
-1. Manage transfers to/from your account
+
+<ol>
+{{% fragment %}}<li>Confirm your identity</li>{{% /fragment %}}
+{{% fragment %}}<li>Manage transfers to/from your account</li>{{% /fragment %}}
+</ol>
 
 ---
 
@@ -45,7 +48,7 @@ https://decks.mtlynch.io/nerds-2020/
 * Brute force can crack most bank passwords.
   * Banks are responsible for stopping this.
 
-<img src="chase-bad-login.png">
+<img src="chase-bad-login.png" style="max-width: 40%">
 
 ---
 
@@ -70,15 +73,19 @@ https://decks.mtlynch.io/nerds-2020/
 
 ### Public/private key encryption is one way
 
+{{% fragment %}}
 ```bash
 > encrypt("Hello, world!", private_key)
 QWxvaGEsIG11bmRvIQ==
 ```
+{{% /fragment %}}
 
+{{% fragment %}}
 ```bash
 > decrypt("QWxvaGEsIG11bmRvIQ==", public_key)
 Hello, world!
 ```
+{{% /fragment %}}
 
 ---
 
@@ -96,17 +103,23 @@ Huh? Do you understand how public/private key encryption works?
 ### Transfering cryptocurrency with public/private keys
 
 
+{{% fragment %}}
 ```python
 > encrypt("I hereby give $5 to Rick Hood", private_key)
 WW8gZG95ICQ1IGEgS2VsbHkgQWxicmVjaHQ=
 ```
+{{% /fragment %}}
 
+{{% fragment %}}
 ```python
 > decrypt("WW8gZG95ICQ1IGEgS2VsbHkgQWxicmVjaHQ=", public_key)
 I hereby give $5 to Rick Hood
 ```
+{{% /fragment %}}
 
+{{% fragment %}}
 * In short: private keys are like passwords that the world can verify.
+{{% /fragment %}}
 
 ---
 
@@ -184,8 +197,18 @@ I hereby give $5 to Rick Hood
 
 * Transposed letters?
   * `meat` -> `meta`
+
+---
+
+# Finding the mistake
+
 * Added or subtracted letters?
   * `heart` -> `heat`
+
+---
+
+# Finding the mistake
+
 * Incorrect letter?
   * `tagged` -> `tugged`
 
@@ -295,16 +318,25 @@ Checking the word `wise`
 
 ---
 
-# Finding a Levenshtein implementation
+### Finding a Levenshtein implementation
 
-* TODO: Screenshot of PyPI package
-* TODO: Console output of pip installing
+<img src="pypi-levenshtein.png">
+
+---
+
+### Installying python-Levenshtein
+
+<img src="pip-levenshtein.png">
 
 ---
 
 # Using Levenshtein library
 
-* TODO: Example API usage
+```python
+>>> import Levenshtein
+>>> Levenshtein.distance('cat', 'scar')
+2
+```
 
 ---
 
@@ -419,7 +451,7 @@ Confirmed Balance:   594.8 SC
 
 # Yoinks
 
-* TODO: Screenshot of SiaStats move to my wallet
+<img src="steal-transaction.png" style="max-width: 80%">
 
 ---
 
@@ -436,7 +468,7 @@ $ siac wallet transactions
 
 # Maybe the money was in limbo
 
-* TODO: Screenshot of exchange problems post
+<img src="polo-issues.png" style="max-width: 80%">
 
 ---
 
@@ -460,9 +492,20 @@ for /l %%x in (1, 0, 100) do (
 
 # Informing the owner
 
-* What I could buy with the money
+{{% fragment %}}
+* But what could I buy with the money?
+{{% /fragment %}}
 
-TODO: Rolexes, yachts
+<div style="width:100%">
+{{% fragment %}}
+<img src="marcin-ciszewski-Zexjl0v3MRU-unsplash.jpg" style="max-width: 42%">
+{{% /fragment %}}
+
+{{% fragment %}}
+<img src="revolt-p2WUEFGrAdA-unsplash.jpg" style="max-width: 35%">
+{{% /fragment %}}
+
+</div>
 
 ---
 
@@ -480,7 +523,9 @@ TODO: Rolexes, yachts
 
 # And then...
 
+{{% fragment %}}
 Nothing
+{{% /fragment %}}
 
 ---
 
@@ -490,13 +535,13 @@ Nothing
 
 ---
 
-# Why can't you guess every possible passphrase?
+### Why can't you guess every possible passphrase?
 
-* TODO: Screenshot of people suggesting guessing every passphrase
+<img src="brute-force-everything.jpg">
 
 ---
 
-# Why can't you guess every possible passphrase?
+# Because you can't
 
 * 29<sup>1,626</sup> ~= 10<sup>2,377</sup> possible passphrases
 * Brute forcing every possible private key: 10<sup>77</sup>
@@ -509,25 +554,54 @@ Nothing
 
 ---
 
-# Did I commit a crime?
+## Consulting the CFAA
 
-* TODO: Go over CFAA to say why it's not.
+<img src="cfaa.png" style="max-width: 50%;">
+
+---
+
+## "Accesses a computer"
+
+<img src="cfaa-highlighted.png" style="max-width: 50%;">
+
+---
+
+### Physical-world equivalent
+
+You find a wallet on a busy street corner. Do you...
+
+<div style="max-width: 50%; margin-left: auto; margin-right: auto;">
+
+{{% fragment %}}
+**A.** Pick it up and track down the owner
+{{% /fragment %}}
+
+
+{{% fragment %}}
+**B.** Leave it on the ground and contact the owner to say you saw it.
+{{% /fragment %}}
+
+</div>
 
 ---
 
 # Lessons learned
 
-* Cryptographic keys are fragile.
-  * Information you reveal weakens them more than you might expect.
-* Avoid human copying for precious data.
-* Keep track of where you announce major financial losses.
-* I love clean code, but quick 'n dirty works when there's a time crunch.
+<ul>
+{{% fragment %}}<li>Cryptographic keys are fragile.</li>{{% /fragment %}}
+{{% fragment %}}<li>Avoid human copying for precious data.</li>{{% /fragment %}}
+{{% fragment %}}<li>Keep track of where you announce major financial losses.</li>{{% /fragment %}}
+{{% fragment %}}<li>Quick 'n dirty code works when there's a time crunch.</li>{{% /fragment %}}
 
 ---
 
 # WanderJest
 
-* TODO: WanderJest screenshot
+* A guide to local live comedy
+
+<br>
+
+<a href="https://wanderjest.com"><img src="wanderjest-screenshot.png" style="max-width: 50%;"></a>
 
 ---
 

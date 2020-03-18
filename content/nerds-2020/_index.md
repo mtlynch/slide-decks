@@ -15,19 +15,19 @@ https://decks.mtlynch.io/nerds-2020/
 
 ---
 
-# You're all sworn to secrecy
+### You're all sworn to secrecy
 
 <ul>
 {{% fragment index="0" %}}<li>This is a true story<sup>*</sup></li>{{% /fragment %}}
-{{% fragment index="1" %}}<li>I really did steal money</li>{{% /fragment %}}
-{{% fragment index="2" %}}<li>But it was the right thing to do</li>{{% /fragment %}}
+{{% fragment index="2" %}}<li>I really did steal money</li>{{% /fragment %}}
+{{% fragment index="3" %}}<li>But it was the right thing to do</li>{{% /fragment %}}
 </ul>
 
-{{% fragment index="0" %}}<p><sup>*</sup>Variable names have been changed to protect the innocent.</p>{{% /fragment %}}
+{{% fragment index="1" %}}<p><sup>*</sup>Variable names have been changed to protect the innocent.</p>{{% /fragment %}}
 
 ---
 
-# A brief crash course in cryptocurrency
+## A brief crash course in cryptocurrency
 
 * For people who don't care about cryptocurrency
 
@@ -71,32 +71,15 @@ https://decks.mtlynch.io/nerds-2020/
 
 ---
 
-### Public/private key encryption is one way
+### Encryption/decryption with a public/private keypair
 
-{{% fragment %}}
-```bash
-> encrypt("Hello, world!", private_key)
-QWxvaGEsIG11bmRvIQ==
-```
-{{% /fragment %}}
-
-{{% fragment %}}
-```bash
-> decrypt("QWxvaGEsIG11bmRvIQ==", public_key)
-Hello, world!
-```
-{{% /fragment %}}
+<img src="asymetric-encryption-flowchart.png">
 
 ---
 
 ### Public/private key encryption is one way
 
-TODO: Flow chart
-
-```bash
-> decrypt("QWxvaGEsIG11bmRvIQ==", private_key)
-Huh? Do you understand how public/private key encryption works?
-```
+<img src="wrong-direction-encryption.png">
 
 ---
 

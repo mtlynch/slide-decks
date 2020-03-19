@@ -85,7 +85,6 @@ https://decks.mtlynch.io/nerds-2020/
 
 ### Transfering cryptocurrency with public/private keys
 
-
 {{% fragment %}}
 ```python
 > encrypt("I hereby give $5 to Rick Hood", private_key)
@@ -126,9 +125,10 @@ I hereby give $5 to Rick Hood
 
 # Sia
 
-### A cryptocurrency for sharing storage
+### A marketplace for disk storage
 
 * Like Airbnb, but for disk space
+* Participants pay one another in Siacoin
 
 <img src="sia-homepage.jpg" style="max-width: 50%">
 
@@ -173,6 +173,22 @@ I hereby give $5 to Rick Hood
 # I'm *pretty sure* I didn't make a mistake
 
 <img src="sia-reddit-mistake.png">
+
+---
+
+# The race is on!
+
+<div style="display: flex; flex-direction: row;">
+
+<div style="display: flex; flex-direction: column; justify-content: center">
+
+* People steal from exposed wallets in minutes
+* Sia's price had increased, attracted popular attention
+
+</div>
+
+<img src="rat-race.jpg" style="margin-left: 40px; max-width: 32%">
+</div>
 
 ---
 
@@ -449,7 +465,16 @@ $ siac wallet transactions
 
 ---
 
-# Maybe the money was in limbo
+# Transactions stuck in limbo
+
+* Cryptocurrencies can process a limited number of transactions
+  * Usually a few hundred per minute.
+* When the network is overloaded, transactions get stuck in limbo.
+  * Sender has sent the money, but the recipient hasn't received it.
+
+---
+
+# Poloniex stuck in limbo
 
 <img src="polo-issues.png" style="max-width: 80%">
 
@@ -520,13 +545,13 @@ Nothing
 
 ### Why can't you guess every possible passphrase?
 
-<img src="brute-force-everything.jpg">
+<img src="brute-force-everything.png">
 
 ---
 
 # Because you can't
 
-* 29<sup>1,626</sup> ~= 10<sup>2,377</sup> possible passphrases
+* 1,626<sup>29</sup> ~= 10<sup>93</sup> possible passphrases
 * Brute forcing every possible private key: 10<sup>77</sup>
 
 ---

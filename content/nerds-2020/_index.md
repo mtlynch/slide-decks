@@ -581,7 +581,7 @@ You find a wallet on a busy street corner. Do you...
 <div style="max-width: 50%; margin-left: auto; margin-right: auto;">
 
 {{% fragment %}}
-**A.** Pick it up and track down the owner
+**A.** Pick it up and track down the owner.
 {{% /fragment %}}
 
 

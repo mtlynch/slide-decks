@@ -306,14 +306,14 @@ Checking the word `wise`
 
 # Finding alternate candidates
 
-| Position | Word     | Alternate Candidates |
-|----------|----------|----------------------|
-| 1        | `eluded` |                      |
-| 2        | `logic`  |                      |
-| 3        | `wise`   | `wife`               |
-| 4        | `ascend` |                      |
-| 5        | `tagged` | `jagged`, `nagged`   |
-| ...      | ...      | ...                  |
+| Posted Word  | Alternate Candidates |
+|----------|----------------------|
+| `eluded` |                      |
+| `logic`  |                      |
+| `wise`   | `wife`               |
+| `ascend` |                      |
+| `tagged` | `jagged`, `nagged`   |
+| ...      | ...                  |
 
 ---
 

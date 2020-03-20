@@ -603,16 +603,6 @@ You find a wallet on a busy street corner. Do you...
 
 ---
 
-# WanderJest
-
-* A guide to local live comedy
-
-<br>
-
-<a href="https://wanderjest.com"><img src="wanderjest-screenshot.png" style="max-width: 50%;"></a>
-
----
-
 # Thanks!
 
 * Full blog post is at https://mtlynch.io/stole-siacoin/

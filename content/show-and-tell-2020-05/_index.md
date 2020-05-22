@@ -102,8 +102,8 @@ https://decks.mtlynch.io/show-and-tell-2020-05/
 * Sometimes my posts do well there after getting exposure on Reddit / HN
 * The dream: snowball effect
   * A 10k-follower user RTs, then a 100k-follower, then @BarackObama
-  * Reality: Never happens to me
-    * Probably the exception rather than the rule
+* Reality: Never happens to me
+  * Probably the exception rather than the rule
 
 ---
 
@@ -373,7 +373,7 @@ I blog for a few different reasons
 
 ---
 
-### Original artwork: way undervalued
+### Original artwork:<br>criminally underused
 
 
 <div style="display: flex; flex-direction: row;">
@@ -411,8 +411,8 @@ vs.
 ### Read your post aloud
 
 * You catch so many more errors this way
-* Run your post through a grammar check / spell check
-  * I think Grammarly's good, not great
+* Run your post through a grammar checker / spell checker
+  * Grammarly's good, not great
   * Don't blindly trust your grammar checker
 
 ---

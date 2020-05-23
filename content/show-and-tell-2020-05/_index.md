@@ -111,7 +111,7 @@ https://decks.mtlynch.io/show-and-tell-2020-05/
 
 * There are forums and social networks for bloggers, but...
   * They don't accept external links
-  * They don't want people popping in to promote their own post
+  * They don't want people popping in to promote their own posts
 * Difficult to rank for almost any search term related to blogging
 
 ---
@@ -323,7 +323,7 @@ I blog for a few different reasons
 ### Editing
 
 * Takes the longest time and is the most mentally taxing
-* Good writing crystallizes ideas and explains them clearly and succinctly
+* Good writing crystallizes ideas, explains them clearly and succinctly
   * This is really hard!
 
 ---

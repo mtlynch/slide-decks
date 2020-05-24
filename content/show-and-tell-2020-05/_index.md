@@ -135,24 +135,6 @@ I blog for a few different reasons
 
 ---
 
-### Why I blog:<br>Vanity
-
-<div style="display: flex; flex-direction: row;">
-
-<div style="display: flex; flex-direction: column; justify-content: center;">
-
-* If I'm being honest
-* Fun to have people discuss my work
-* Nice to get feedback
-
-</div>
-
-<img src="zoidberg.jpg" style="margin-left: 30px; max-width: 30%">
-
-</div>
-
----
-
 ### Why I blog:<br>Clarify my thinking
 
 * Writing out a post forces me to organize my thoughts
@@ -184,6 +166,24 @@ I blog for a few different reasons
 * I get good response on cold emails
 * I *think* it's because my email signature includes my blog
   * Not a random, faceless stranger
+
+---
+
+### Why I blog:<br>Vanity
+
+<div style="display: flex; flex-direction: row;">
+
+<div style="display: flex; flex-direction: column; justify-content: center;">
+
+* If I'm being honest
+* Fun to have people discuss my work
+* Nice to get feedback
+
+</div>
+
+<img src="zoidberg.jpg" style="margin-left: 30px; max-width: 30%">
+
+</div>
 
 ---
 

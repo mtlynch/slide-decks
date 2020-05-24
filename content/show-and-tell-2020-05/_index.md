@@ -221,7 +221,7 @@ I blog for a few different reasons
   * First year: 75k
 * Why it did well
   * Approaches building homelab PC as a beginner
-  * Easier than others for the reader to follow along
+  * Easier for the reader to follow along than similar articles
 
 ---
 
@@ -230,7 +230,7 @@ I blog for a few different reasons
 * Tell an engaging or fun story
 * Teach something broadly useful
 * Repackage existing ideas in a way people enjoy
-* The topics match social media channels that accept external links
+* Topics matches social media channels that accept external links
 
 ---
 

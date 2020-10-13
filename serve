@@ -9,4 +9,4 @@ set -x
 # Exit on unset variable.
 set -u
 
-hugo server --bind blog --port 1314 --baseURL http://blog:1314
+hugo server --bind "0.0.0.0" --port 1314 --baseURL "http://${HOSTNAME}:1314"

@@ -219,7 +219,7 @@ Case costs are after 75% subsidy from [MA Innovation Voucher](https://www.uml.ed
   * After sending out free replacements to ~60 legacy customers, I had only 40 left to sell to new customers.
 * PCB assembly time
   * Biggest bottleneck, most costly part.
-  * Possible resolution: after prototyping, outsource the assembly and manufacture to two independent PCB manufacturing firms.
+  * Possible resolution: after prototyping, outsource assembly to two redundant PCB manufacturing firms.
 
 ---
 

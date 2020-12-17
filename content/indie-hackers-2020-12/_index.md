@@ -1,7 +1,7 @@
 +++
 title = "How My First Info Product is Going"
 date = 2020-10-13
-conference = "Indie Hackers - November"
+conference = "Indie Hackers - December"
 outputs = ["Reveal"]
 +++
 
@@ -24,7 +24,7 @@ https://decks.mtlynch.io/indie-hackers-2020-12/
 
 ## Video courses sound easy!
 
-* Daniel Vasallo made his course [in 16 hours](https://t.co/3evuHgEzIk?amp=1)
+* Daniel Vassallo made his course [in 16 hours](https://t.co/3evuHgEzIk?amp=1)
   * Earned $150k in under a year
 
 ---

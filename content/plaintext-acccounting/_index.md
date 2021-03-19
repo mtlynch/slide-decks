@@ -11,7 +11,7 @@ outputs = ["Reveal"]
 
 Michael Lynch ([@deliberatecoder](https://twitter.com/deliberatecoder))
 
-https://decks.mtlynch.io/indie-hackers-2020-12/
+https://decks.mtlynch.io/plaintext-accounting/
 
 ---
 

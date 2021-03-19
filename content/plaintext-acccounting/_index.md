@@ -19,7 +19,8 @@ https://decks.mtlynch.io/plaintext-accounting/
 
 <img src="xero-sucks.png">
 
-* Xero help to the user in processing transactions
+* Zero help to the user in processing transactions
+  * Is that why it's called Xero?
 
 ---
 

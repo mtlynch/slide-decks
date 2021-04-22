@@ -7,7 +7,7 @@ outputs = ["Reveal"]
 
 ## {{<param title>}}
 
-{{< param conference >}} 19, 2021
+{{< param conference >}} 22, 2021
 
 Michael Lynch ([@deliberatecoder](https://twitter.com/deliberatecoder))
 

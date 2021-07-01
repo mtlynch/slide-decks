@@ -182,12 +182,6 @@ Internal mailing lists ($20/month)
 
 ---
 
-## BitWarden
-
-Secure secret sharing
-
----
-
 ## [LogPaste](http://logpaste.com/)
 
 Diagnostic log sharing ($6/month self-hosted)
@@ -225,9 +219,15 @@ Diagnostic log sharing ($6/month self-hosted)
 
 ## BitWarden
 
+Secure secret sharing ($12/month)
+
+---
+
+## BitWarden
+
 * Pros
-  * Open source
-  * Independent reimplementations of server
+  * Open-source
+  * Independent reimplementations of server exist
   * Supports many platforms and browsers
 
 ---

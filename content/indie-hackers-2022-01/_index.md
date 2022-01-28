@@ -109,7 +109,7 @@ I'm super available!
 
 ---
 
-### Create a help forum
+### Benefits of help forum
 
 * Builds a public corpus of technical help
 * Useful way to search past error message
@@ -150,7 +150,7 @@ I'm super available!
 
 ### Maximum of two questions
 
->Sorry to hear you're unable to see the remote screen on your TinyPilot!
+>**Me**: Sorry to hear you're unable to see the remote screen on your TinyPilot!
 >
 >* Can you go to System > Logs > Get Shareable URL and share the URL with me?
 >* Can you go hit the F12 key in Chrome and then click the "Console" tab? Does that show any errors?
@@ -160,7 +160,9 @@ I'm super available!
 
 ### Maximum of two questions
 
->I just tried rebooting the device. It didn't work.
+>**Customer**: I just tried rebooting the device. It didn't work.
+
+>**Me**: ...
 
 ---
 

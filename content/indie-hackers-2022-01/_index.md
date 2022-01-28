@@ -88,6 +88,35 @@ I'm super available!
 
 ---
 
+### Create a help forum
+
+* I like [TalkYard](https://talkyard.io)
+  * Open-source
+  * Indie developer
+  * Managed hosting starts at $2/month
+
+---
+
+### TinyPilot's help forum
+
+<img src="ty1.png" width="500">
+
+---
+
+### TinyPilot's help forum
+
+<img src="ty2.png" width="500">
+
+---
+
+### Create a help forum
+
+* Builds a public corpus of technical help
+* Useful way to search past error message
+* Users help each other
+
+---
+
 ### Shared inbox \>\>\> private inbox
 
 * Even if you're the only person answering

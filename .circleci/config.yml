@@ -10,7 +10,7 @@ jobs:
           command: tests/check-trailing-whitespace
   build:
     docker:
-      - image: peaceiris/hugo:v0.62.1
+      - image: peaceiris/hugo:v0.101.0
     steps:
       - checkout
       - run:

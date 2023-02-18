@@ -1,6 +1,6 @@
 +++
 title = "How to Make Your Code Reviewer Fall in Love with You"
-date = 2020-03-18
+date = 2023-03-18
 conference = "NERD Summit"
 outputs = ["Reveal"]
 +++

@@ -15,9 +15,15 @@ https://decks.mtlynch.io/nerds-2023/
 
 ---
 
-# Why?
+# Goal
 
-* TODO
+* Become so good at code reviews that...
+
+---
+
+# Your code reviewer will fall in love with you
+
+{{% fragment %}}Literally{{% /fragment %}}
 
 ---
 
@@ -43,25 +49,38 @@ Helps:
 
 ## Learn faster
 
-If you prepare your changelist properly, it directs your reviewer's attention to areas that support your growth rather than boring style violations. When you demonstrate an appreciation for constructive criticism, your reviewer provides better feedback .
+* Directs your reviewer's attention to important areas
+* Elicits more constructive feedback from your reviewer
 
 ---
 
 ## Make others better
 
-Your code review techniques set an example for your colleagues. Effective author practices rub off on your teammates, which makes your job easier when they send code to you.
+* Good technique as reviewer sets an example for your colleagues
+* Makes your job easier when they send code to you.
 
 ---
 
 ## Minimize team conflicts
 
-Code reviews are a common source of friction. Approaching them deliberately and conscientiously minimizes arguments.
+* Code reviews are a common source of friction
+* A conscientious approach minimizes arguments
 
 ---
 
 ## The golden rule
 
+{{% fragment %}}
 ### Value your reviewer's time
+{{% /fragment %}}
+
+---
+
+### Value your reviewer's time
+
+* Easiest thing to do is a lazy review
+* A quality review is a gift
+* Reward them for putting in the time
 
 ---
 
@@ -71,7 +90,27 @@ Code reviews are a common source of friction. Approaching them deliberately and 
 
 ---
 
+### Review your own code first
+
+* Put yourself in their mindset
+    * Think of how you'd read the code without additional context
+* Use a diff view
+
+---
+
+### Review your own code first
+
+* Your reviewer should not be seeing
+    * Debug code you forgot to delete
+    * Extra files you accidentally included
+    * Unresolved merged conflicts
+
+---
+
 ## Write a clear changelist description
+
+* Explaing the context around the change
+* The **why** not the **how**
 
 ---
 

@@ -5,13 +5,21 @@ conference = "NERD Summit"
 outputs = ["Reveal"]
 +++
 
-<img src="cover.jpg" style="max-height: 50vh">
+<img src="cover.jpg" style="max-height: 30vh">
 
 {{<param conference>}} - March 18, 2023
 
 Michael Lynch ([@deliberatecoder](https://twitter.com/deliberatecoder))
 
 https://decks.mtlynch.io/nerds-2023/
+
+---
+
+## Improve code reviews as the author
+
+* You're half of the review
+* You have a significant impact on the outcome
+* Too few developers think about it
 
 ---
 
@@ -57,7 +65,7 @@ Helps:
 ## Make others better
 
 * Good technique as reviewer sets an example for your colleagues
-* Makes your job easier when they send code to you.
+* Makes your job easier when they send code to you
 
 ---
 
@@ -81,6 +89,39 @@ Helps:
 * Easiest thing to do is a lazy review
 * A quality review is a gift
 * Reward them for putting in the time
+
+---
+
+### What is a code review?
+
+<div>
+<img src="what-is-1.png" style="max-height: 25vh">
+</div>
+
+* Consists of **author** and **reviewer**
+* Author sends a **changelist** to reviewer
+
+---
+
+### What is a code review?
+
+<div>
+<img src="what-is-2.png" style="max-height: 25vh">
+</div>
+
+* Review happens in **rounds**
+  * Author sends changelist
+  * Reviewer gives feedback
+
+---
+
+### What is a code review?
+
+<div>
+<img src="what-is-3.png" style="max-height: 25vh">
+</div>
+
+* Review ends when reviewer **approves** the changelist
 
 ---
 
@@ -109,6 +150,12 @@ Helps:
 
 ## Write a clear changelist description
 
+* Everything the reviewer needs should be in the code or the description
+
+---
+
+## Write a clear changelist description
+
 * Explaing the context around the change
 * The **why** not the **how**
 
@@ -120,19 +167,29 @@ Helps:
 
 ---
 
+## Automate the easy stuff
+
+* git pre-commit hooks
+* Integrate linters/formatters
+* Continuous integration (CI)
+
+---
+
 ## Answer questions with the code itself
 
 <img src="having-trouble.png">
 
 ---
 
-#### Answer questions with the code itself
+## Answer questions with the code itself
 
-<img src="late-night-question.jpg" style="max-height: 70vh">
+* If your reviewer has this question, others will likely have the same question
 
 ---
 
-## Narrowly scope changes
+#### Answer questions with the code itself
+
+<img src="late-night-question.jpg" style="max-height: 40vh">
 
 ---
 
@@ -144,17 +201,18 @@ Helps:
 
 ##### Separate functional and non-functional changes
 
-<img src="mixed-refactoring.png" style="max-height: 65vh">
+<img src="mixed-refactoring.png" style="max-height: 45vh">
 
 ---
 
-## Break up large changelists
+##### Separate functional and non-functional changes
 
----
-
-## Respond graciously to critiques
-
-<img src="nice-catch.png">
+- One-line change
+  - Easy to review
+- Whitespace-only change
+  - Easy to review
+- One-line functional change within 200 lines of whitespace changes
+  - *Painful* to review
 
 ---
 
@@ -164,21 +222,24 @@ Helps:
 
 ---
 
-## Communicate your responses explicitly
+## Artfully solicit missing information
 
-<img src="ptal.png">
-
----
-
-## Communicate your responses explicitly
-
-<img src="reviewable-satisfied.png">
+>**Reviewer**: This function is confusing
 
 ---
 
 ## Artfully solicit missing information
 
->What changes would be helpful?
+>**Reviewer**: This function is confusing
+>
+>**Author**: What changes would be helpful?
+
+---
+
+## Artfully solicit missing information
+
+* Take a stab at it
+  * Find *something* to improve about your code
 
 ---
 
@@ -188,7 +249,44 @@ Helps:
 
 ---
 
+## Respond graciously to critiques
+
+<img src="nice-catch.png">
+
+---
+
+## Respond graciously to critiques
+
+* Reviewer catching subtle mistakes is a good sign
+  * You've eliminated the easy stuff
+
+---
+
+## Break up large changelists
+
+Skip?
+
+---
+
+## Communicate your responses explicitly
+
+Skip?
+
+<img src="ptal.png">
+
+---
+
+Skip?
+
+## Communicate your responses explicitly
+
+<img src="reviewable-satisfied.png">
+
+---
+
 ## Minimize lag between rounds of review
+
+Skip?
 
 <img src="effort-graph.jpg">
 

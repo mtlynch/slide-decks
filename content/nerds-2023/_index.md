@@ -9,7 +9,7 @@ outputs = ["Reveal"]
 
 {{<param conference>}} - March 18, 2023
 
-Michael Lynch ([@deliberatecoder](https://twitter.com/deliberatecoder))
+Michael Lynch ([mtlynch.io](https://mtlynch.io))
 
 https://decks.mtlynch.io/nerds-2023/
 
@@ -47,11 +47,10 @@ https://decks.mtlynch.io/nerds-2023/
 
 ## Why improve your code reviews?
 
-Helps:
-
-* Your reviewer
-* Your team
-* You
+* Helps
+  * Your reviewer
+  * Your team
+  * You
 
 ---
 
@@ -64,15 +63,15 @@ Helps:
 
 ## Make others better
 
-* Good technique as reviewer sets an example for your colleagues
+* Sets an example for your colleagues
 * Makes your job easier when they send code to you
 
 ---
 
 ## Minimize team conflicts
 
-* Code reviews are a common source of friction
-* A conscientious approach minimizes arguments
+* Code reviews a common source of friction
+* Conscientious approach minimizes arguments
 
 ---
 
@@ -133,31 +132,61 @@ Helps:
 
 ### Review your own code first
 
-* Put yourself in their mindset
-    * Think of how you'd read the code without additional context
+* Put yourself in reviewer's shoes
+    * Imagine you don't have context as author
 * Use a diff view
 
 ---
 
 ### Review your own code first
 
-* Your reviewer should not be seeing
+* Your reviewer should **not** see:
     * Debug code you forgot to delete
     * Extra files you accidentally included
     * Unresolved merged conflicts
 
 ---
 
-## Write a clear changelist description
+### Write a clear changelist description
 
 * Everything the reviewer needs should be in the code or the description
 
 ---
 
-## Write a clear changelist description
+### Write a clear changelist description
 
-* Explaing the context around the change
-* The **why** not the **how**
+* Explain the **context** around the change
+  * The **why** not the **how**
+
+---
+
+### Write a clear changelist description
+
+Example <font color="red">**bad**</font> changelist description
+
+>Change the timeout
+>
+>This change sets `timeout` in `send.js` from `5` to `30`.
+
+---
+
+### Write a clear changelist description
+
+Example <font color="green">**good**</font> changelist description
+
+>Increase email send timeout to 30s
+>
+>Originally, In reviewing our logs for the past
+
+---
+
+## Automate the easy stuff
+
+* Review time is valuable
+* Don't use human reviewers to:
+  * Format code
+  * Identify style violations
+  * Identify build failures
 
 ---
 
@@ -169,9 +198,10 @@ Helps:
 
 ## Automate the easy stuff
 
-* git pre-commit hooks
-* Integrate linters/formatters
-* Continuous integration (CI)
+* Shift heavy lifting to computers with:
+  * git pre-commit hooks
+  * Integrate linters/formatters
+  * Continuous integration (CI)
 
 ---
 
@@ -183,7 +213,7 @@ Helps:
 
 ## Answer questions with the code itself
 
-* If your reviewer has this question, others will likely have the same question
+* If your reviewer has this question, others will too
 
 ---
 
@@ -193,32 +223,88 @@ Helps:
 
 ---
 
+## Answer questions with the code itself
+
+* Prevent future readers from having the question
+  * Refactor code to improve clarity
+  * Add code comments for things you can't express with naming/structure
+
+---
+
 ### Separate functional and non-functional changes
 
 <img src="buried-change.png" style="max-height: 60vh">
 
 ---
 
-##### Separate functional and non-functional changes
+### Separate functional and non-functional changes
 
-<img src="mixed-refactoring.png" style="max-height: 45vh">
+<img src="mixed-refactoring.png" style="max-height: 40vh">
 
 ---
 
-##### Separate functional and non-functional changes
+### Separate functional and non-functional changes
 
-- One-line change
-  - Easy to review
-- Whitespace-only change
-  - Easy to review
-- One-line functional change within 200 lines of whitespace changes
-  - *Painful* to review
+* How it happens
+  * Author makes a small change
+  * IDE is configured to auto-format on change
+  * Author doesn't notice / care
+
+---
+
+### Separate functional and non-functional changes
+
+| Changelist | Review difficulty |
+|------------|------------|
+| One-line change | <font color="green">Easy</font> |
+| Whitespace-only change | <font color="green">Easy</font> |
+| One-line functional change within 200 lines of whitespace changes | <font color="red">**Painful**</font> |
+
+---
+
+## Respond graciously to critiques
+
+* It's about the code not about you
+* Stay objective even if your reviewer is not
+* Resist defensiveness
+
+---
+
+## Respond graciously to critiques
+
+<img src="nice-catch.png">
+
+---
+
+## Respond graciously to critiques
+
+* Reviewer catching subtle mistakes is a good sign
+  * You've eliminated the easy stuff
 
 ---
 
 ## Be patient when your reviewer is wrong
 
 <img src="try-actually-reading.png">
+
+---
+
+## Be patient when your reviewer is wrong
+
+* A misunderstand of the code: still a red flag
+
+
+>There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.
+>
+>-Tony Hoare
+
+---
+
+## Be patient when your reviewer is wrong
+
+* Can you prevent future readers from misunderstanding?
+  * Refactor the code
+  * Add comments to clarify intent
 
 ---
 
@@ -249,16 +335,20 @@ Helps:
 
 ---
 
-## Respond graciously to critiques
+## Award all ties to your reviewer
 
-<img src="nice-catch.png">
+>**Reviewer**: I think this 8-line function would be better as two 5-line functions.
+>
+>**Author**: I think it's clearer as a single function.
+
+Who's right?
 
 ---
 
-## Respond graciously to critiques
+## Award all ties to your reviewer
 
-* Reviewer catching subtle mistakes is a good sign
-  * You've eliminated the easy stuff
+* **Reviewer** has better perspective reading the code fresh.
+* If both participants have equal evidence, defer to reviewer.
 
 ---
 

@@ -75,22 +75,6 @@ https://decks.mtlynch.io/nerds-2023/
 
 ---
 
-## The golden rule
-
-{{% fragment %}}
-### Value your reviewer's time
-{{% /fragment %}}
-
----
-
-### Value your reviewer's time
-
-* Easiest thing to do is a lazy review
-* A quality review is a gift
-* Reward them for putting in the time
-
----
-
 ### What is a code review?
 
 <div>
@@ -124,6 +108,22 @@ https://decks.mtlynch.io/nerds-2023/
 
 ---
 
+## The golden rule
+
+{{% fragment %}}
+### Value your reviewer's time
+{{% /fragment %}}
+
+---
+
+### Value your reviewer's time
+
+* Easiest thing to do is a lazy review
+* A quality review is a gift
+* Reward them for putting in the time
+
+---
+
 ### Review your own code first
 
 <img src="what-idiot.jpg">
@@ -143,7 +143,14 @@ https://decks.mtlynch.io/nerds-2023/
 * Your reviewer should **not** see:
     * Debug code you forgot to delete
     * Extra files you accidentally included
-    * Unresolved merged conflicts
+    * Unresolved merge conflicts
+
+---
+
+### Review your own code first
+
+* Come back to the code with fresh eyes
+    * Review your code after taking a few hours away
 
 ---
 
@@ -239,16 +246,16 @@ Example <font color="green">**good**</font> changelist description
 
 ### Separate functional and non-functional changes
 
-<img src="mixed-refactoring.png" style="max-height: 40vh">
+* How it happens
+  * Author makes a small change
+  * IDE is configured to auto-format on change
+  * Author doesn't notice / care
 
 ---
 
 ### Separate functional and non-functional changes
 
-* How it happens
-  * Author makes a small change
-  * IDE is configured to auto-format on change
-  * Author doesn't notice / care
+<img src="mixed-refactoring.png" style="max-height: 40vh">
 
 ---
 
@@ -310,13 +317,13 @@ Example <font color="green">**good**</font> changelist description
 
 ## Artfully solicit missing information
 
->**Reviewer**: This function is confusing
+>**Reviewer**: This function is confusing.
 
 ---
 
 ## Artfully solicit missing information
 
->**Reviewer**: This function is confusing
+>**Reviewer**: This function is confusing.
 >
 >**Author**: What changes would be helpful?
 
@@ -352,25 +359,21 @@ Who's right?
 
 ---
 
-## Break up large changelists
-
-Skip?
-
----
-
 ## Communicate your responses explicitly
-
-Skip?
 
 <img src="ptal.png">
 
 ---
 
-Skip?
-
 ## Communicate your responses explicitly
 
-<img src="reviewable-satisfied.png">
+<img src="reviewable-satisfied.png"  style="max-height: 30vh">
+
+---
+
+## Break up large changelists
+
+Skip?
 
 ---
 
@@ -379,6 +382,27 @@ Skip?
 Skip?
 
 <img src="effort-graph.jpg">
+
+---
+
+# Review
+
+1. Review your own code first
+1. Write a clear changelist description
+1. Automate the easy stuff
+1. Answer questions with the code itself
+1. Separate functional and non-functional changes
+1. Respond graciously to critiques
+1. Be patient when your reviewer is wrong
+1. Communicate your responses explicitly
+1. Artfully solicit missing information
+1. Award all ties to your reviewer
+
+---
+
+## The golden rule
+
+### Value your reviewer's time
 
 ---
 

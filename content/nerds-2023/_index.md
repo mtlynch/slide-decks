@@ -17,9 +17,11 @@ https://decks.mtlynch.io/nerds-2023/
 
 ## Improve code reviews as the author
 
-* You're half of the review
-* You have a significant impact on the outcome
-* Too few developers think about it
+<ul>
+{{% fragment %}}<li>Too few developers think about it</li>{{% /fragment %}}
+{{% fragment %}}<li>You're half of the review</li>{{% /fragment %}}
+{{% fragment %}}<li>You have a significant impact on the outcome</li>{{% /fragment %}}
+</ul>
 
 ---
 
@@ -56,22 +58,28 @@ https://decks.mtlynch.io/nerds-2023/
 
 ## Learn faster
 
-* Directs your reviewer's attention to important areas
-* Elicits more constructive feedback from your reviewer
+<ul>
+{{% fragment %}}<li>Directs your reviewer's attention to important areas</li>{{% /fragment %}}
+{{% fragment %}}<li>Elicits more constructive feedback from your reviewer</li>{{% /fragment %}}
+</ul>
 
 ---
 
 ## Make others better
 
-* Sets an example for your colleagues
-* Makes your job easier when they send code to you
+<ul>
+{{% fragment %}}<li>Sets an example for your colleagues</li>{{% /fragment %}}
+{{% fragment %}}<li>Makes your job easier when they send code to you</li>{{% /fragment %}}
+</ul>
 
 ---
 
 ## Minimize team conflicts
 
-* Code reviews a common source of friction
-* Conscientious approach minimizes arguments
+<ul>
+{{% fragment %}}<li>Code reviews a common source of friction</li>{{% /fragment %}}
+{{% fragment %}}<li>Conscientious approach minimizes arguments</li>{{% /fragment %}}
+</ul>
 
 ---
 
@@ -118,9 +126,12 @@ https://decks.mtlynch.io/nerds-2023/
 
 ### Value your reviewer's time
 
-* Easiest thing to do is a lazy review
-* A quality review is a gift
-* Reward them for putting in the time
+<ul>
+{{% fragment %}}<li>Easiest thing to do is a lazy review</li>{{% /fragment %}}
+{{% fragment %}}<li>A quality review is a gift</li>{{% /fragment %}}
+{{% fragment %}}<li>Reward them for putting in the time</li>{{% /fragment %}}
+{{% fragment %}}<li>Developer time is a scarce resource</li>{{% /fragment %}}
+</ul>
 
 ---
 
@@ -162,6 +173,15 @@ https://decks.mtlynch.io/nerds-2023/
 
 ### Write a clear changelist description
 
+* Other people might read it beyond the reviewer
+  * People from other teams
+  * Future teammates
+  * You, in a year
+
+---
+
+### Write a clear changelist description
+
 * Explain the **context** around the change
   * The **why** not the **how**
 
@@ -171,9 +191,9 @@ https://decks.mtlynch.io/nerds-2023/
 
 Example <font color="red">**bad**</font> changelist description
 
->Change the timeout
+>**Move user.js**
 >
->This change sets `timeout` in `send.js` from `5` to `30`.
+>This change moves user.js to the src/controllers/auth directory.
 
 ---
 
@@ -181,9 +201,11 @@ Example <font color="red">**bad**</font> changelist description
 
 Example <font color="green">**good**</font> changelist description
 
->Increase email send timeout to 30s
+>**Move user.js to src/controllers/auth**
 >
->Originally, In reviewing our logs for the past
+>When we created user.js, most of its callers lived in src/lib/user.
+>
+>We did a lot of restructing as part of the 4.2.x release, so now all of user.js's clients live in src/controllers/auth, so this change moves user.js to be closer to the majority of its clients.
 
 ---
 
@@ -206,9 +228,9 @@ Example <font color="green">**good**</font> changelist description
 ## Automate the easy stuff
 
 * Shift heavy lifting to computers with:
+  * Continuous integration (CI)
   * git pre-commit hooks
   * Integrate linters/formatters
-  * Continuous integration (CI)
 
 ---
 
@@ -218,15 +240,15 @@ Example <font color="green">**good**</font> changelist description
 
 ---
 
-## Answer questions with the code itself
-
-* If your reviewer has this question, others will too
-
----
-
 #### Answer questions with the code itself
 
 <img src="late-night-question.jpg" style="max-height: 40vh">
+
+---
+
+## Answer questions with the code itself
+
+* If your reviewer has this question, others will too
 
 ---
 
@@ -255,12 +277,6 @@ Example <font color="green">**good**</font> changelist description
 
 ### Separate functional and non-functional changes
 
-<img src="mixed-refactoring.png" style="max-height: 40vh">
-
----
-
-### Separate functional and non-functional changes
-
 | Changelist | Review difficulty |
 |------------|------------|
 | One-line change | <font color="green">Easy</font> |
@@ -269,11 +285,19 @@ Example <font color="green">**good**</font> changelist description
 
 ---
 
+### Separate functional and non-functional changes
+
+<img src="mixed-refactoring.png" style="max-height: 40vh">
+
+---
+
 ## Respond graciously to critiques
 
-* It's about the code not about you
-* Stay objective even if your reviewer is not
-* Resist defensiveness
+<ul>
+{{% fragment %}}<li>It's about the code not about you</li>{{% /fragment %}}
+{{% fragment %}}<li>Stay objective even if your reviewer is not</li>{{% /fragment %}}
+{{% fragment %}}<li>Resist defensiveness</li>{{% /fragment %}}
+</ul>
 
 ---
 
@@ -300,6 +324,9 @@ Example <font color="green">**good**</font> changelist description
 
 * A misunderstand of the code: still a red flag
 
+---
+
+## Be patient when your reviewer is wrong
 
 >There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies.
 >
@@ -354,8 +381,18 @@ Who's right?
 
 ## Award all ties to your reviewer
 
-* **Reviewer** has better perspective reading the code fresh.
-* If both participants have equal evidence, defer to reviewer.
+* **Reviewer** has better perspective reading the code fresh
+* If both participants have equal evidence, defer to reviewer
+
+---
+
+## Communicate your responses explicitly
+
+1. Author sends changelist
+1. Reviewer gives notes
+1. Author makes changes
+
+What happens next?
 
 ---
 
@@ -386,6 +423,8 @@ Skip?
 ---
 
 # Review
+
+TODO: Fix order
 
 1. Review your own code first
 1. Write a clear changelist description

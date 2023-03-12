@@ -143,6 +143,13 @@ https://decks.mtlynch.io/nerds-2023/
 
 ### Review your own code first
 
+* Come back to the code with fresh eyes
+    * Review your code after taking a few hours away
+
+---
+
+### Review your own code first
+
 * Put yourself in reviewer's shoes
     * Imagine you don't have context as author
 * Use a diff view
@@ -155,13 +162,6 @@ https://decks.mtlynch.io/nerds-2023/
     * Debug code you forgot to delete
     * Extra files you accidentally included
     * Unresolved merge conflicts
-
----
-
-### Review your own code first
-
-* Come back to the code with fresh eyes
-    * Review your code after taking a few hours away
 
 ---
 
@@ -230,33 +230,7 @@ Example <font color="green">**good**</font> changelist description
 * Shift heavy lifting to computers with:
   * Continuous integration (CI)
   * git pre-commit hooks
-  * Integrate linters/formatters
-
----
-
-## Answer questions with the code itself
-
-<img src="having-trouble.png">
-
----
-
-#### Answer questions with the code itself
-
-<img src="late-night-question.jpg" style="max-height: 40vh">
-
----
-
-## Answer questions with the code itself
-
-* If your reviewer has this question, others will too
-
----
-
-## Answer questions with the code itself
-
-* Prevent future readers from having the question
-  * Refactor code to improve clarity
-  * Add code comments for things you can't express with naming/structure
+  * Integrate linters/formatters in your editor
 
 ---
 
@@ -288,6 +262,54 @@ Example <font color="green">**good**</font> changelist description
 ### Separate functional and non-functional changes
 
 <img src="mixed-refactoring.png" style="max-height: 40vh">
+
+---
+
+## Communicate your responses explicitly
+
+1. Author sends changelist
+1. Reviewer gives notes
+1. Author pushes new commits
+
+What happens next?
+
+---
+
+## Communicate your responses explicitly
+
+<img src="ptal.png">
+
+---
+
+## Communicate your responses explicitly
+
+<img src="mark-approved.png" style="max-width: 803px" >
+
+---
+
+## Answer questions with the code itself
+
+<img src="having-trouble.png">
+
+---
+
+#### Answer questions with the code itself
+
+<img src="late-night-question.jpg" style="max-height: 40vh">
+
+---
+
+## Answer questions with the code itself
+
+* If your reviewer has this question, others will too
+
+---
+
+## Answer questions with the code itself
+
+* Prevent future readers from having the question
+  * Refactor code to improve clarity
+  * Add code comments for things you can't express with naming/structure
 
 ---
 
@@ -339,6 +361,7 @@ Example <font color="green">**good**</font> changelist description
 * Can you prevent future readers from misunderstanding?
   * Refactor the code
   * Add comments to clarify intent
+  * Add tests
 
 ---
 
@@ -386,28 +409,6 @@ Who's right?
 
 ---
 
-## Communicate your responses explicitly
-
-1. Author sends changelist
-1. Reviewer gives notes
-1. Author makes changes
-
-What happens next?
-
----
-
-## Communicate your responses explicitly
-
-<img src="ptal.png">
-
----
-
-## Communicate your responses explicitly
-
-<img src="reviewable-satisfied.png"  style="max-height: 30vh">
-
----
-
 ## Break up large changelists
 
 Skip?
@@ -424,16 +425,14 @@ Skip?
 
 # Review
 
-TODO: Fix order
-
 1. Review your own code first
 1. Write a clear changelist description
 1. Automate the easy stuff
-1. Answer questions with the code itself
 1. Separate functional and non-functional changes
+1. Communicate your responses explicitly
+1. Answer questions with the code itself
 1. Respond graciously to critiques
 1. Be patient when your reviewer is wrong
-1. Communicate your responses explicitly
 1. Artfully solicit missing information
 1. Award all ties to your reviewer
 

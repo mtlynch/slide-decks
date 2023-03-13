@@ -409,20 +409,6 @@ Who's right?
 
 ---
 
-## Break up large changelists
-
-Skip?
-
----
-
-## Minimize lag between rounds of review
-
-Skip?
-
-<img src="effort-graph.jpg">
-
----
-
 # Review
 
 1. Review your own code first

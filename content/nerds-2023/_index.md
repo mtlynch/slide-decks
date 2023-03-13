@@ -5,6 +5,22 @@ conference = "NERD Summit"
 outputs = ["Reveal"]
 +++
 
+<!--
+
+Hello, everyone!
+
+Welcome. Thank you for coming. My name is Michael Lynch, and this talk is How to Make Your Code Reviewer Fall in Love with You.
+
+In this talk, I'm going to talk about how to improve code reviews when you're the author. A lot of developers neglect this part of the review because they think that their reviewer is the one who drives the code review. And the reviewer does a lot of heavy lifting, but when we're the author, we're still half of the review. We're responsible for starting things off on the right foot and keeping things on track, and a lot of developers forget that.
+
+The goal of this talk is to make you so good at code reviews that your code reviewer will fall in love with you.
+
+And I know some of you might be thinking, "I don't really want my reviewer to fall in love with me. I just want a professional relationship with them."
+
+They're going to fall in love with you. In this business, you're either bad at preparing your code for review, or you're so good at it that your reviewer is impressed to the point of falling in love with you.
+
+-->
+
 <img src="cover.jpg" style="max-height: 30vh">
 
 {{<param conference>}} - March 18, 2023

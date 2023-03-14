@@ -11,7 +11,7 @@ Hello, everyone!
 
 Welcome. Thank you for coming. My name is Michael Lynch, and this talk is How to Make Your Code Reviewer Fall in Love with You.
 
-In this talk, I'm going to talk about how to improve code reviews when you're the author. A lot of developers neglect this part of the review because they think that their reviewer is the one who drives the code review. And the reviewer does a lot of heavy lifting, but when we're the author, we're still half of the review. We're responsible for starting things off on the right foot and keeping things on track, and a lot of developers forget that.
+I'm going to talk about how to improve code reviews when you're the author. A lot of developers neglect this part of the review because they think that their reviewer is the one who drives the code review. And the reviewer does a lot of heavy lifting, but when we're the author, we're still half of the review. We're responsible for starting things off on the right foot and keeping things on track, and a lot of developers forget that.
 
 The goal of this talk is to make you so good at code reviews that your code reviewer will fall in love with you.
 
@@ -21,7 +21,7 @@ They're going to fall in love with you. In this business, you're either bad at p
 
 -->
 
-<img src="cover.jpg" style="max-height: 30vh">
+<img src="cover.jpg" style="max-height: 46vh">
 
 {{<param conference>}} - March 18, 2023
 
@@ -102,7 +102,7 @@ https://decks.mtlynch.io/nerds-2023/
 ### What is a code review?
 
 <div>
-<img src="what-is-1.png" style="max-height: 25vh">
+<img src="what-is-1.png" style="max-height: 40vh">
 </div>
 
 * Consists of **author** and **reviewer**
@@ -113,7 +113,7 @@ https://decks.mtlynch.io/nerds-2023/
 ### What is a code review?
 
 <div>
-<img src="what-is-2.png" style="max-height: 25vh">
+<img src="what-is-2.png" style="max-height: 40vh">
 </div>
 
 * Review happens in **rounds**
@@ -125,7 +125,7 @@ https://decks.mtlynch.io/nerds-2023/
 ### What is a code review?
 
 <div>
-<img src="what-is-3.png" style="max-height: 25vh">
+<img src="what-is-3.png" style="max-height: 40vh">
 </div>
 
 * Review ends when reviewer **approves** the changelist
@@ -190,8 +190,8 @@ https://decks.mtlynch.io/nerds-2023/
 ### Write a clear changelist description
 
 * Other people might read it beyond the reviewer
+  * Teammates not on the review
   * People from other teams
-  * Future teammates
   * You, in a year
 
 ---
@@ -311,7 +311,7 @@ What happens next?
 
 #### Answer questions with the code itself
 
-<img src="late-night-question.jpg" style="max-height: 40vh">
+<img src="late-night-question.jpg" style="max-height: 70vh">
 
 ---
 

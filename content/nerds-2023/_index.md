@@ -17,7 +17,7 @@ The goal of this talk is to make you so good at code reviews that your code revi
 
 And I know some of you might be thinking, "I don't really want my reviewer to fall in love with me. I just want a professional relationship with them."
 
-They're going to fall in love with you. In this business, you're either bad at preparing your code for review, or you're so good at it that your reviewer is impressed to the point of falling in love with you.
+They're going to fall in love with you. In this business, you're either bad at preparing your code for review, or you're so good at it that your reviewer is impressed with your skills that they simply fall in love with you.
 
 -->
 
@@ -181,6 +181,34 @@ https://decks.mtlynch.io/nerds-2023/
 
 ---
 
+### Review your own code first
+
+Which is easier?
+
+<ol>
+{{% fragment %}}<li>Reviewer identifies the bug</li>{{% /fragment %}}
+{{% fragment %}}<li>Reviewer writes a note explaining the bug to you</li>{{% /fragment %}}
+{{% fragment %}}<li>Author reads the note</li>{{% /fragment %}}
+{{% fragment %}}<li>Author finds the relevant code</li>{{% /fragment %}}
+{{% fragment %}}<li>Author makes the fix</li>{{% /fragment %}}
+{{% fragment %}}<li>Author sends the revised code to reviewer</li>{{% /fragment %}}
+{{% fragment %}}<li>Reviewer verifies the fix</li>{{% /fragment %}}
+</ol>
+
+---
+
+### Review your own code first
+
+Which is easier?
+
+<ol>
+{{% fragment %}}<li>Author identifies the bug</li>{{% /fragment %}}
+{{% fragment %}}<li>Author fixes the bug</li>{{% /fragment %}}
+</ol>
+
+
+---
+
 ### Write a clear changelist description
 
 * Everything the reviewer needs should be in the code or the description
@@ -252,7 +280,7 @@ Example <font color="green">**good**</font> changelist description
 
 ### Separate functional and non-functional changes
 
-<img src="buried-change.png" style="max-height: 60vh">
+<img src="buried-change.png" style="max-height: 55vh">
 
 ---
 
@@ -260,7 +288,7 @@ Example <font color="green">**good**</font> changelist description
 
 * How it happens
   * Author makes a small change
-  * IDE is configured to auto-format on change
+  * Editor is configured to auto-format on change
   * Author doesn't notice / care
 
 ---
@@ -311,7 +339,7 @@ What happens next?
 
 #### Answer questions with the code itself
 
-<img src="late-night-question.jpg" style="max-height: 70vh">
+<img src="late-night-question.jpg" style="max-height: 60vh">
 
 ---
 
@@ -389,6 +417,18 @@ What happens next?
 
 ## Artfully solicit missing information
 
+Example <font color="red">**bad**</font> response (defensive)
+
+>**Reviewer**: This function is confusing.
+>
+>**Author**: What, exactly, is confusing about it?
+
+---
+
+## Artfully solicit missing information
+
+Example <font color="green">**good**</font> response (agreeable)
+
 >**Reviewer**: This function is confusing.
 >
 >**Author**: What changes would be helpful?
@@ -452,5 +492,6 @@ Who's right?
   * Or Google "code review love"
 * Mastodon: [michael@m.mtlynch.io](https://m.mtlynch.io/@michael)
 * Twitter: [@deliberatecoder](https://twitter.com/deliberatecoder)
+* Co-host monthly Indie Founders meetup
 * Email: michael@mtlynch.io
 * Slides: https://decks.mtlynch.io/nerds-2023/

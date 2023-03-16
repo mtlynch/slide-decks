@@ -34,9 +34,9 @@ https://decks.mtlynch.io/nerds-2023/
 ## Improve code reviews as the author
 
 <ul>
-{{% fragment %}}<li>Too few developers think about it</li>{{% /fragment %}}
 {{% fragment %}}<li>You're half of the review</li>{{% /fragment %}}
 {{% fragment %}}<li>You have a significant impact on the outcome</li>{{% /fragment %}}
+{{% fragment %}}<li>Too few developers think about it</li>{{% /fragment %}}
 </ul>
 
 ---

@@ -188,10 +188,10 @@ Which is easier?
 <ol>
 {{% fragment %}}<li>Reviewer identifies the bug</li>{{% /fragment %}}
 {{% fragment %}}<li>Reviewer writes a note explaining the bug to you</li>{{% /fragment %}}
-{{% fragment %}}<li>Author reads the note</li>{{% /fragment %}}
-{{% fragment %}}<li>Author finds the relevant code</li>{{% /fragment %}}
-{{% fragment %}}<li>Author makes the fix</li>{{% /fragment %}}
-{{% fragment %}}<li>Author sends the revised code to reviewer</li>{{% /fragment %}}
+{{% fragment %}}<li>You read the note</li>{{% /fragment %}}
+{{% fragment %}}<li>You find the relevant code</li>{{% /fragment %}}
+{{% fragment %}}<li>You make the fix</li>{{% /fragment %}}
+{{% fragment %}}<li>You send the revised code to reviewer</li>{{% /fragment %}}
 {{% fragment %}}<li>Reviewer verifies the fix</li>{{% /fragment %}}
 </ol>
 
@@ -202,8 +202,8 @@ Which is easier?
 Which is easier?
 
 <ol>
-{{% fragment %}}<li>Author identifies the bug</li>{{% /fragment %}}
-{{% fragment %}}<li>Author fixes the bug</li>{{% /fragment %}}
+{{% fragment %}}<li>You identify the bug</li>{{% /fragment %}}
+{{% fragment %}}<li>You fix the bug</li>{{% /fragment %}}
 </ol>
 
 

@@ -33,11 +33,9 @@ https://decks.mtlynch.io/nerds-2023/
 
 ## Improve code reviews as the author
 
-<ul>
-{{% fragment %}}<li>You're half of the review</li>{{% /fragment %}}
-{{% fragment %}}<li>You have a significant impact on the outcome</li>{{% /fragment %}}
-{{% fragment %}}<li>Too few developers think about it</li>{{% /fragment %}}
-</ul>
+* You're half of the review
+* You have a significant impact on the outcome
+* Too few developers think about it
 
 ---
 
@@ -74,28 +72,22 @@ https://decks.mtlynch.io/nerds-2023/
 
 ## Learn faster
 
-<ul>
-{{% fragment %}}<li>Directs your reviewer's attention to important areas</li>{{% /fragment %}}
-{{% fragment %}}<li>Elicits more constructive feedback from your reviewer</li>{{% /fragment %}}
-</ul>
+* Directs your reviewer's attention to important areas
+* Elicits more constructive feedback from your reviewer
 
 ---
 
 ## Make others better
 
-<ul>
-{{% fragment %}}<li>Sets an example for your colleagues</li>{{% /fragment %}}
-{{% fragment %}}<li>Makes your job easier when they send code to you</li>{{% /fragment %}}
-</ul>
+* Sets an example for your colleagues
+* Makes your job easier when they send code to you
 
 ---
 
 ## Minimize team conflicts
 
-<ul>
-{{% fragment %}}<li>Code reviews a common source of friction</li>{{% /fragment %}}
-{{% fragment %}}<li>Conscientious approach minimizes arguments</li>{{% /fragment %}}
-</ul>
+* Code reviews a common source of friction
+* Conscientious approach minimizes arguments
 
 ---
 
@@ -161,14 +153,15 @@ https://decks.mtlynch.io/nerds-2023/
 
 * Come back to the code with fresh eyes
     * Review your code after taking a few hours away
+* Put yourself in reviewer's shoes
+    * Imagine you don't have context as author
 
 ---
 
 ### Review your own code first
 
-* Put yourself in reviewer's shoes
-    * Imagine you don't have context as author
 * Use a diff view
+* You'll overlook changes in your editor
 
 ---
 
@@ -404,7 +397,7 @@ What happens next?
 
 * Can you prevent future readers from misunderstanding?
   * Refactor the code
-  * Add comments to clarify intent
+  * Add comments to clarify behavior
   * Add tests
 
 ---

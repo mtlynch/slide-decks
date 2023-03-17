@@ -296,9 +296,9 @@ Example <font color="green">**good**</font> changelist description
 
 ---
 
-### Separate functional and non-functional changes
+##### Separate functional and non-functional changes
 
-<img src="mixed-refactoring.png" style="max-height: 40vh">
+<img src="mixed-refactoring.png" style="max-height: 70vh">
 
 ---
 

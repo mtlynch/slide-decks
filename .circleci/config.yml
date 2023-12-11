@@ -7,10 +7,10 @@ jobs:
       - checkout
       - run:
           name: Check for trailing whitespace
-          command: tests/check-trailing-whitespace
+          command: dev-scripts/check-trailing-whitespace
   build:
     docker:
-      - image: peaceiris/hugo:v0.101.0
+      - image: peaceiris/hugo:v0.119.0
     steps:
       - checkout
       - run:

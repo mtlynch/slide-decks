@@ -2,7 +2,8 @@ version: 2.1
 jobs:
   check-whitespace:
     docker:
-      - image: debian:jessie-20190228-slim
+      - image: cimg/base:2023.12
+    resource_class: small
     steps:
       - checkout
       - run:

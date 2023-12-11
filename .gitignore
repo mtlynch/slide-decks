@@ -1,4 +1,4 @@
 public/
 resources/
 .sw?
-*.lock
+.hugo_build.lock

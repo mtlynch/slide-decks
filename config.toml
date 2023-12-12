@@ -1,10 +1,14 @@
-theme = ["github.com/dzello/reveal-hugo"]
+theme = "reveal-hugo"
 buildFuture = true
 
 [outputFormats.Reveal]
 baseName = "index"
 mediaType = "text/html"
 isHTML = true
+
+[params.reveal_hugo]
+custom_theme = "reveal-hugo/themes/robot-lung.css"
+custom_css = "css/custom.css"
 
 [markup.goldmark.renderer]
 unsafe = true

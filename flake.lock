@@ -18,6 +18,22 @@
         "type": "github"
       }
     },
+    "go_dep": {
+      "locked": {
+        "lastModified": 1700230496,
+        "narHash": "sha256-pl8PLUQLigZgFZrafIXs2djne5kboimK6MYsZN8Ywtg=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a71323f68d4377d12c04a5410e214495ec598d4c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "a71323f68d4377d12c04a5410e214495ec598d4c",
+        "type": "github"
+      }
+    },
     "hugo_dep": {
       "locked": {
         "lastModified": 1698266953,
@@ -51,6 +67,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "go_dep": "go_dep",
         "hugo_dep": "hugo_dep",
         "nixpkgs": "nixpkgs"
       }

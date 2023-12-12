@@ -11,14 +11,20 @@ jobs:
           command: dev-scripts/check-trailing-whitespace
   build:
     docker:
-      - image: peaceiris/hugo:v0.119.0
+      - image: nixos/nix:2.15.0
     steps:
+      - run:
+          name: Enable Nix flakes
+          command: echo 'experimental-features = nix-command flakes' >> /etc/nix/nix.conf
       - checkout
       - attach_workspace:
           at: ./
       - run:
+          name: Print hugo version
+          command: nix develop --command hugo version
+      - run:
           name: Build prod site
-          command: hugo version && hugo
+          command: nix develop --command hugo
       - persist_to_workspace:
           root: ./
           paths:

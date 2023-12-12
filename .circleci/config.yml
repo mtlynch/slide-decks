@@ -2,7 +2,8 @@ version: 2.1
 jobs:
   check-whitespace:
     docker:
-      - image: debian:jessie-20190228-slim
+      - image: cimg/base:2023.12
+    resource_class: small
     steps:
       - checkout
       - run:
@@ -25,7 +26,7 @@ jobs:
             - tests
   publish_draft:
     docker:
-      - image: cimg/node:14.18.1
+      - image: cimg/node:18.14.1
     environment:
       NETLIFY_SITE_ID: efdd3190-2d13-4eb8-8dcf-d5e77f21af28
     resource_class: small
@@ -45,7 +46,7 @@ jobs:
           command: ./node_modules/.bin/netlify deploy --dir=public --site="${NETLIFY_SITE_ID}"
   deploy:
     docker:
-      - image: cimg/node:14.18.1
+      - image: cimg/node:18.14.1
     environment:
       NETLIFY_SITE_ID: efdd3190-2d13-4eb8-8dcf-d5e77f21af28
     resource_class: small

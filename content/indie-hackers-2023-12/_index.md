@@ -21,14 +21,13 @@ Michael Lynch
 - KVM over IP device
   - Customers are IT departments and home prosumers
 - Started in 2020
-
-TODO: Photo
+- <https://tinypilotkvm.com/>
 
 ---
 
 ## TinyPilot finances
 
-TODO: Graph
+<img src="tinypilot-finances.png">
 
 - Sell about 200 devices/month
 - $80-100k/mo in revenue
@@ -64,7 +63,7 @@ TODO: Graph
 
 ## Acquisition attempt #1
 
-- Asked my hardware consulting vendor in 2021
+- Asked my hardware consulting vendor in mid-2022
   - They know my hardware well
   - They have hardware and software expertise
   - They have software consultants who are under-utilized
